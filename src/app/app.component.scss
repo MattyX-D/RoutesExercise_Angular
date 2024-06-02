@@ -25,3 +25,20 @@
     color: white;
     background-color: rgb(79, 79, 79);
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(79, 79, 79);
+    color: white;
+    text-align: center;
+    * {
+        color: white !important;
+    }
+  }
+
+  .row {
+    --bs-gutter-x: 0rem;
+  }

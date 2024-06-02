@@ -3,7 +3,7 @@
     <form [formGroup]="fg" (ngSubmit)="validateForm()">
         <br><input type="text" placeholder="Username" formControlName="username"/>
         <br><input type="password" placeholder="Password" formControlName="password"/>
-        <br><button type="submit" [disabled]="fg.invalid">LOGIN</button>
+        <br><button type="submit" class="btn btn-primary" [disabled]="fg.invalid">LOGIN</button>
     </form>
 </div>
 @if(error)  {<app-errbox></app-errbox>}
