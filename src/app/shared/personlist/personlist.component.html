@@ -1,0 +1,34 @@
+<h1>Lista degli utenti</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Birthdate</th>
+            <th scope="col">Address</th>
+        </tr>
+  </thead>
+  <tbody>
+    
+    @for (user of users; track $index) {
+        <tr>
+            <app-person
+                [id]="user.id"
+                [name]="user.name"
+                [age]="user.age"
+                [birthdate]="user.birthDate"
+                [address]="user.address">
+            </app-person>
+            <td>
+                <button type="button" class="btn btn-primary" (click)="edit(user.id)">
+                    <i class="fa fa-pencil"></i>
+                </button>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+<button class="btn btn-primary" (click)="add()">
+    <i class="fa fa-plus"></i>
+</button>
