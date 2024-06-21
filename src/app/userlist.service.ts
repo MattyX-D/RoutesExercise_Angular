@@ -16,7 +16,6 @@ export class UserlistService {
         let nUser: User = {id: this.idCount, name: name, age: age, birthDate: birthDate, address: address};
         this.users.push(nUser);
         this.idCount++;
-        console.log(this.users);
     }
 
     public deleteUser(id: number): void {

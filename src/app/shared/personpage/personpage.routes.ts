@@ -1,6 +1,4 @@
 import { Routes } from '@angular/router';
-import { PersonpageComponent } from './personpage.component';
-import { PersonlistComponent } from '../personlist/personlist.component';
 import { routesList } from '../../routes.enum';
 
 

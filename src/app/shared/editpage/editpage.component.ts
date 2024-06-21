@@ -27,16 +27,11 @@ export class EditpageComponent implements OnInit {
   constructor(
     private userListSvc: UserlistService,
     private router: Router,
-    private route: ActivatedRoute //questa
-  ) { 
-    console.log("stampo state")
-    console.log(router.getCurrentNavigation()?.extras.state)
-    console.log("stampo queryparams")
-    console.log(router.getCurrentNavigation()?.extras.queryParams)
-  }
+    private route: ActivatedRoute
+  ) {}
 
   ngOnInit(): void {
-    this.id = parseInt(this.route.snapshot.paramMap.get('id')!) //Questa
+    this.id = parseInt(this.route.snapshot.paramMap.get('id')!)
     if(this.id == -1) {
       this.titleString = "Aggiungi un nuovo utente";
       this.buttonValue = "Aggiungi";

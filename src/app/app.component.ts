@@ -22,11 +22,7 @@ export class AppComponent {
   public errorCredential = true;
   public lastId: number = -2;
   public users: User[] = [];
-
-  constructor(
-    private router: Router,
-    private navigateSvc: NavigationService,
-  ) {}
+  
 
   public setStatus(status: boolean): void {
     this.statusLogin = status;

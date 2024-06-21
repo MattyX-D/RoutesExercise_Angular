@@ -17,7 +17,6 @@ export class PersonpageComponent {
   public lastId: number = -2;  
 
   constructor (
-    private userListSvc: UserlistService,
     private navigateSvc: NavigationService
   ) {}
   
