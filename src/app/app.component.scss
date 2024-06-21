@@ -2,7 +2,7 @@
     background-color: rgb(100, 100, 100);
     padding: 20px;
     border-radius: 3%;
-    width: 50%;
+    width: 40%;
     height: 60%;
 }
 
@@ -51,7 +51,17 @@
 }
 
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1500px) {
+    .loginForm {
+        background-color: rgb(100, 100, 100);
+        padding: 20px;
+        border-radius: 3%;
+        width: 50%;
+        height: 60%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
     .loginForm {
         background-color: rgb(100, 100, 100);
         padding: 20px;
