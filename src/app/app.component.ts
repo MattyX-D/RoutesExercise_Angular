@@ -1,18 +1,17 @@
 import { Component } from '@angular/core';
-import { LoginBoxComponent } from './shared/loginbox/loginbox.component';
-import { ErrBoxComponent } from './shared/errorBox/errbox.component';
-import { SBoxComponent } from './shared/successBox/sbox.component';
-import { LoginServiceService } from './login.service';
-import { PersonpageComponent } from './shared/personpage/personpage.component';
+import { LoginBoxComponent } from './login/loginbox/loginbox.component';
+import { ErrBoxComponent } from './login/errorBox/errbox.component';
+import { SBoxComponent } from './login/successBox/sbox.component';
+import { PersonpageComponent } from './userList/personpage/personpage.component';
 import { User } from './shared/models/user.interface';
-import { Router, RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 import { NavigationService } from './navigation.service';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [LoginBoxComponent, ErrBoxComponent, SBoxComponent, PersonpageComponent, RouterOutlet],
-  providers: [LoginServiceService, NavigationService],
+  providers: [NavigationService],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

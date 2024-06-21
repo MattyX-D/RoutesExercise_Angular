@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { LoginServiceService } from '../../login.service';
+import { LoginService } from '../../login.service';
 import { NavigationService } from '../../navigation.service';
 import { ErrBoxComponent } from '../errorBox/errbox.component';
 
@@ -8,6 +8,7 @@ import { ErrBoxComponent } from '../errorBox/errbox.component';
   selector: 'app-loginbox',
   standalone: true,
   imports: [FormsModule, ReactiveFormsModule, ErrBoxComponent],
+  providers: [LoginService], 
   templateUrl: './loginbox.component.html',
   styleUrl: './loginbox.component.scss'
 })
@@ -16,7 +17,7 @@ export class LoginBoxComponent {
   public imagePath = "../../assets/img.png";
 
   public constructor (
-    private loginSvc: LoginServiceService,
+    private loginSvc: LoginService,
     private navigateSvc: NavigationService
   ) {}
 
